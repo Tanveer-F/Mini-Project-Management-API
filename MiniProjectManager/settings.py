@@ -11,10 +11,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-gdvjd_m1bm51!70cxihu8i0za-b3w%9=tzv+jk9shcx3=5v8lt"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net'
+]
 
 # Application definition
 
