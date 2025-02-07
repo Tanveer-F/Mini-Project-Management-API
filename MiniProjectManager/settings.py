@@ -19,6 +19,13 @@ CSRF_TRUSTED_ORIGINS = [
     'https://api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net'
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORIGINS = [
+    'https://api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net'
+]
+
+
 # Application definition
 
 INSTALLED_APPS = [
