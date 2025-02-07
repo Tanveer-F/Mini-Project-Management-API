@@ -1,24 +1,25 @@
 # Mini Project Management API
+# Note: Live URL (https://api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net/api/)
 
 Objective
 
-This API provides a minimal project and task management system with role-based permissions and JWT authentication.
+This API provides a minimal Project and Task Management System with:
 
-Features:
+# Features:
 
 User authentication (JWT-based register and login)
 
 Role-based access control (Admin & Member)
 
-CRUD operations for projects and tasks
+CRUD operations for managing projects and tasks
 
-Permissions enforcement for different roles
+Permissions enforcement based on user roles
 
 Unit tests for key functionalities
 
 Pagination for task lists
 
-Deployment on a cloud platform
+Cloud deployment on Azure App Service
 
 # Technologies Used
 
@@ -28,6 +29,7 @@ Django REST Framework (DRF) (API Development)
 
 Simple JWT (Authentication)
 
-SQL (Database)
+SQLite (Database)
 
-Cloud Deployment (Azure App Service cloud platform)
+Azure App Service – (Cloud deployment)
+
