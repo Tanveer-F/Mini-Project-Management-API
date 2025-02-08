@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Project, Task
+from .models import Project, Task, CustomUser
 
 # Register your models here.
 
@@ -10,3 +10,8 @@ class ProjectAdmin(admin.ModelAdmin):
 @admin.register(Task)
 class TaskAdmin(admin.ModelAdmin):
     list_display = ['title' ,'project', 'assigned_to', 'status', 'created_at']
+
+
+@admin.register(CustomUser)
+class CustomUserAdmin(admin.ModelAdmin):
+    list_display = ['username', 'role']
