@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "e4c779f5-a199-4cdc-804b-b67c33341cae",
+		"name": "Mini Project Management API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39499849"
+	},
+	"item": [
+		{
+			"name": "https://api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net/api/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net/api/",
+					"protocol": "https",
+					"host": [
+						"api-management-fpebhfafb7ake8d5",
+						"eastasia-01",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net/api/register/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Tanveer_F\",\r\n    \"email\": \"tanveer_f@example.com\",\r\n    \"password\": \"Information@\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net/api/register/",
+					"protocol": "https",
+					"host": [
+						"api-management-fpebhfafb7ake8d5",
+						"eastasia-01",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net/api/projects/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDI0MDY3LCJpYXQiOjE3MzkwMjM3NjcsImp0aSI6IjJhNjY4MGVlZWQ0NDQ4NzZiYTdhMzFjMzBkMTI5NDliIiwidXNlcl9pZCI6M30.NtRNV_uGFuH1VvC5YPwmiMljarbUpd799wFpXSA47u0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net/api/projects/",
+					"protocol": "https",
+					"host": [
+						"api-management-fpebhfafb7ake8d5",
+						"eastasia-01",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"projects",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net/api/login/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Tanveer_F\",\r\n    \"password\": \"Information@\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net/api/login/",
+					"protocol": "https",
+					"host": [
+						"api-management-fpebhfafb7ake8d5",
+						"eastasia-01",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net/api/tasks/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDI0MDY3LCJpYXQiOjE3MzkwMjM3NjcsImp0aSI6IjJhNjY4MGVlZWQ0NDQ4NzZiYTdhMzFjMzBkMTI5NDliIiwidXNlcl9pZCI6M30.NtRNV_uGFuH1VvC5YPwmiMljarbUpd799wFpXSA47u0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-management-fpebhfafb7ake8d5.eastasia-01.azurewebsites.net/api/tasks/",
+					"protocol": "https",
+					"host": [
+						"api-management-fpebhfafb7ake8d5",
+						"eastasia-01",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"tasks",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
